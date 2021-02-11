@@ -5,5 +5,6 @@ function getToHerokuGet() {
 
 const container = document.querySelector('#id');
 getToHerokuGet().then(({ data }) => {
-  container.textContent(data);
+  console.log(data);
+  container.textContent = (data.greeting);
 })
